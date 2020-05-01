@@ -1,6 +1,10 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100, 200, 300, 400, 600');
+
 body {
     background-color: #2c3e50;
     color: #020202;
+    font-family: "Impact";
 }
 
 .btn {
@@ -9,7 +13,53 @@ body {
 
 
 h1 {
-    color: #020202;
+    font-size: 70px;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.js-greetings {
+    text-align: center;
+    margin: 100px;
+    font-size: 60px;
+    opacity: 0.8;
+}
+
+input {
+    text-align: center;
+    font-size: 20px;
+    margin: 40px;
+    background-color: inherit;
+    padding: 5px 30px;
+    border-radius: 40px;
+    border: outset white;
+}
+
+input::placeholder {
+    font-family: Impact;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+.js-todoForm {
+    text-align: center;
+}
+
+.js-todoList {
+    text-align: center;
+}
+
+.js-todoList li {
+    margin-bottom: 15px;
+    padding-right: 130px;
+    font-size: 30px;
+    color: white;
+}
+
+.js-todoList span {
+    margin-right: 20px;
 }
 
 .form,
