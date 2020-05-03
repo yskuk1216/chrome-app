@@ -63,6 +63,7 @@ body {
 }
 
 input {
+    border: 1px solid white;
     padding: 20px 100px;
     border-radius: 3px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
@@ -81,6 +82,15 @@ input::placeholder {
 
 .js-todoList li {
     display: block;
+}
+
+.js-todoList span {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.js-todoList button {
+    padding-top: 10px;
 }
 
 .js-weather {
