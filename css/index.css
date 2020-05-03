@@ -63,14 +63,26 @@ body {
 }
 
 input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     border: 1px solid white;
-    padding: 20px 100px;
+    padding: 18px 60px;
     border-radius: 3px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
     color: #000;
     display: inline-block;
     font-weight: 500;
     text-shadow: none;
+    margin-top: -50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
 }
 
 input::placeholder {
@@ -78,19 +90,31 @@ input::placeholder {
     font-size: 22px;
     color: black;
     text-shadow: none;
+    opacity: 0.5;
+}
+
+input[type=text] {
+    font-size: 18px;
 }
 
 .js-todoList li {
-    display: block;
+    display: flex;
 }
 
 .js-todoList span {
-    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 500px;
+    margin-bottom: 5px;
     margin-right: 10px;
+    font-size: 25px;
+    color: #2c3e50;
 }
 
 .js-todoList button {
-    padding-top: 10px;
+    border: 1px solid inherit;
+    margin: 10px 1px;
+    border-radius: 4px;
 }
 
 .js-weather {
